@@ -47,16 +47,16 @@ public class RegistrationTests extends TestBase {
          * Проверяем заполненную форму построчно. Закрываем форму
          */
         registrationPage.verifyResultsModalAppears()
-                .verifyResult("Student Name", firstName +" " + lastName)
+                .verifyResult("Student Name", firstName + " " + lastName)
                 .verifyResult("Student Email", userEmail)
                 .verifyResult("Gender", userGender)
                 .verifyResult("Mobile", userNumber)
-                .verifyResult("Date of Birth", "31 May,1986")
+                .verifyResult("Date of Birth", day + " " + month + "," + year)
                 .verifyResult("Subjects", subject)
                 .verifyResult("Hobbies", hobbies)
                 .verifyResult("Picture", avatar.replaceAll("src/test/resources/",""))
                 .verifyResult("Address", currentAddress)
-                .verifyResult("State and City", state+ " " +city)
+                .verifyResult("State and City", state + " " + city)
                 .clickClose();
     }
 }

@@ -85,7 +85,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setHobbies(String value) {
-        hobbiesCheckBoxes.parent().click();
+        hobbiesCheckBoxes.parent().$(byText(value)).click();
         return this;
     }
 
@@ -107,7 +107,7 @@ public class RegistrationPage {
 
     public RegistrationPage setCity(String value) {
         cityList.click();
-        $("#stateCity-wrapper").$(new ByText("Karnal")).click();
+        $("#stateCity-wrapper").$(new ByText(value)).click();
         return this;
     }
 
