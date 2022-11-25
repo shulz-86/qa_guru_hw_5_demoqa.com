@@ -6,20 +6,20 @@ public class RegistrationTests extends TestBase {
     /**
      * Заполняем тестовые данные
      */
-    String firstName = "Max";
-    String lastName = "Fenig";
-    String userEmail = "Fenig@Max.com";
-    String userGender = "Male";
-    String userNumber = "4123567890";
-    String day = "31";
-    String month = "May";
-    String year = "1986";
-    String subject = "Maths";
-    String hobbies = "Music";
-    String avatar = "src/test/resources/16-7-scaled.jpg";
-    String currentAddress = "address";
-    String state = "Haryana";
-    String city = "Karnal";
+    String firstName = "Max",
+            lastName = "Fenig",
+            userEmail = "Fenig@Max.com",
+            userGender = "Male",
+            userNumber = "4123567890",
+            day = "31",
+            month = "May",
+            year = "1986",
+            subject = "Maths",
+            hobbies = "Music",
+            avatar = "src/test/resources/16-7-scaled.jpg",
+            currentAddress = "address",
+            state = "Haryana",
+            city = "Karnal";
 
     @Test
     void fillFormTest() {
